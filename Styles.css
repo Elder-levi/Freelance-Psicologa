@@ -1,30 +1,32 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
-ul{
-display: flex;
-list-style: none;
-margin: 20px;
-gap: 25px;
-}
-
-li {
+ul {
+  display: flex;
   list-style: none;
+  margin: 0;
+  gap: 25px;
 }
+
+
 
 li a {
   position: relative;
   text-decoration: none;
   color: black;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 li a::after {
@@ -42,26 +44,156 @@ li a:hover::after {
   width: 100%;
 }
 
-header{
-    background-color: #EDE4E4;
-     }
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #EDE4E4;
+  padding: 50px;
+  align-items: center;
+}
+
 .perfil{
-width: 400px;
-height: 400px;
-padding: 50px;
+width: 550px;
+height: 550px;
+padding-top: 4em;
+font-size: 25px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
 
 .perfil > h1{
-
 text-align: center;
 padding-bottom: 20px;
 }
 
-.perfil > P
-{
-padding-left: 25px;    
-text-align: left;
-height: 150px;
-width: 200px;
+.perfil > p {
+  text-align: center;
+  height: 150px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.bot-header {
+  background-color: #8A4C57;
+  border: none;
+  border-radius: 25px;
+  height: 50px;
+  width: 200px;
+  margin: 20px auto 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.bot-header:hover {
+  background-color: white;
+  color: #8A4C57;
+  transform: scale(1.05);
+}
+
+main {
+  background-color: #8A4C57;
+  width: 100%;
+  padding: 50px 20px;
+}
+
+main h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+}
+
+
+.Carrosel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.box01 {
+  background-color: wheat;
+  width: 300px;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: transform 0.3s ease;
+}
+
+.box01:hover {
+  transform: translateY(-5px);
+}
+
+.box01 img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.box01 h2 {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.box01 p {
+  color: #666;
+  font-size: 0.95em;
+  flex-grow: 1;
+}
+
+.box01 button {
+  background-color: #8A4C57;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  margin-top: auto;
+}
+
+.box01 button:hover {
+  background-color: #6a3a45;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .perfil {
+    width: 100%;
+    padding-top: 2em;
+  }
+  
+  .Carrosel {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
 }
