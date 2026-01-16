@@ -5,7 +5,7 @@
           const title = img ? img.alt : 'Relato';
           const modal = document.getElementById('relato-modal');
           document.getElementById('modal-title').textContent = title;
-          document.getElementById('modal-body').textContent = 'Aqui vai o texto completo do relato — coloque o conteúdo real aqui.';
+          document.getElementById('modal-body').textContent = 'Colocar Texto sobre Relato caso necessario.';
           if (typeof modal.showModal === 'function') modal.showModal(); else modal.style.display = 'block';
         });
       });

@@ -264,6 +264,19 @@ main h1 {
   margin-top: 12px;
 }
 
+.Sobre_Min > h1
+{
+text-align: center;
+}
+
+
+.Sobre_Min 
+{
+  background-color: #8A4C57;
+}
+
+
+
 
 
 
@@ -295,3 +308,44 @@ main h1 {
     text-align: center;
   }
 }
+
+/* Responsividade adicional para tablets e celulares */
+@media (max-width: 1024px) {
+  .perfil {
+    width: 100%;
+    padding-top: 2.5em;
+  }
+
+  .perfil > p {
+    width: 90%;
+    font-size: 0.95em;
+  }
+
+  .relato-card img { height: 160px; }
+}
+
+
+@media (max-width: 480px) {
+  nav { padding: 12px; }
+  nav img { max-width: 140px; }
+
+  .perfil { padding-top: 1.5em; }
+  .perfil > h1 { font-size: 1.4em; }
+  .perfil > p { font-size: 0.9em; width: 95%; }
+
+  .relatos-grid { gap: 16px; }
+  .relato-card img { height: 140px; }
+  .relato-card figcaption { padding: 12px; }
+
+  .btn-ler { padding: 10px 14px; font-size: 1em; }
+
+  /* Modal ocupa mais espaço em telas pequenas e permite scroll interno */
+  .relato-modal { width: 95%; max-width: 95%; }
+  .relato-modal .modal-content { max-height: 80vh; overflow: auto; }
+
+  /* Aumentar área de clique nas opções do nav quando empilhado */
+  ul li a { padding: 8px 6px; display: inline-block; }
+}
+
+/* Melhorar foco para acessibilidade */
+:focus { outline: 3px solid rgba(138,76,87,0.25); outline-offset: 2px; }
