@@ -52,11 +52,75 @@
         <p>Você pode explorar seus pensamentos, sentimentos e desafios com conforto, seja de casa, do trabalho ou de onde estiver</p> 
         <button>Saber Mais</button>
       </div>
+    </main>
+    <section class="relatos-section">
+      <h1>RELATOS</h1>
+      <div class="relatos-grid">
+        <article class="relato-card">
+          <figure>
+            <img src="./IMG/Relato01.png" alt="Relato sobre ansiedade" data-id="1">
+            <figcaption>
+              <h2>Superando a ansiedade</h2>
+              <p class="trecho">Senti que estava preso(a) a pensamentos que não me deixavam... </p>
+              <button class="btn-ler" data-relato="1" aria-haspopup="dialog">Ler mais</button>
+            </figcaption>
+          </figure>
+        </article>
 
+        <article class="relato-card">
+          <figure>
+            <img src="./IMG/Relato02.png" alt="Relato sobre depressão" data-id="2">
+            <figcaption>
+              <h2>Encontrando motivação</h2>
+              <p class="trecho">Com o acompanhamento, consegui retomar pequenas atitudes do dia a dia...</p>
+              <button class="btn-ler" data-relato="2" aria-haspopup="dialog">Ler mais</button>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="relato-card">
+          <figure>
+            <img src="./IMG/Relato03.png" alt="Relato sobre relacionamento" data-id="3">
+            <figcaption>
+              <h2>Melhorando relacionamentos</h2>
+              <p class="trecho">Aprendi a colocar limites e a me comunicar com mais clareza...</p>
+              <button class="btn-ler" data-relato="3" aria-haspopup="dialog">Ler mais</button>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="relato-card">
+          <figure>
+            <img src="./IMG/Relato04.png" alt="Relato sobre autoestima" data-id="4">
+            <figcaption>
+              <h2>Reconstruindo a autoestima</h2>
+              <p class="trecho">Passei a reconhecer minhas conquistas e aceitar minhas falhas...</p>
+              <button class="btn-ler" data-relato="4" aria-haspopup="dialog">Ler mais</button>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="relato-card">
+          <figure>
+            <img src="./IMG/Relato06.png" alt="Relato sobre luto" data-id="5">
+            <figcaption>
+              <h2>Processando o luto</h2>
+              <p class="trecho">O processo foi diferente do que eu esperava, mas encontrei acolhimento...</p>
+              <button class="btn-ler" data-relato="5" aria-haspopup="dialog">Ler mais</button>
+            </figcaption>
+          </figure>
+        </article>
       </div>
 
+      <dialog id="relato-modal" class="relato-modal" aria-labelledby="modal-title">
+        <div class="modal-content">
+          <h2 id="modal-title">Título do relato</h2>
+          <p id="modal-body">Texto completo do relato escolhido. Substitua este texto pelo conteúdo real do relato para publicar.</p>
+          <button id="modal-close">Fechar</button>
+        </div>
+      </dialog>
+    </section>
 
-
-    </main>
+    <script src="app.js"></script>
 </body>
 </html>

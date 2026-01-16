@@ -170,6 +170,104 @@ main h1 {
   background-color: #6a3a45;
 }
 
+.relatos-section{
+  background-color: #EDE4E4;
+  padding: 50px 20px;
+}
+
+.relatos-section > h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.relatos-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.relato-card{
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+.relato-card img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.relato-card figcaption{
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.relato-card h2{
+  font-size: 1.05em;
+  color: #333;
+}
+
+.relato-card .trecho{
+  color: #555;
+  font-size: 0.95em;
+  line-height: 1.2em;
+  max-height: 2.6em;
+  overflow: hidden;
+}
+
+.btn-ler{
+  background-color: #8A4C57;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.btn-ler:focus,
+.btn-ler:hover{
+  background-color: #6a3a45;
+}
+
+/* Modal/dialog */
+.relato-modal{
+  border: none;
+  border-radius: 8px;
+  padding: 0;
+  max-width: 700px;
+  width: 90%;
+}
+
+.relato-modal .modal-content{
+  padding: 18px;
+}
+
+#modal-close{
+  background: #ccc;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+
+
+
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
