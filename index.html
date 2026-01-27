@@ -11,13 +11,13 @@
     <nav>
       <img src="./IMG/logo.png" alt="Logo Rosa Nóbrega">
       <ul>
-        <li><a href="#">INÍCIO</a></li>
-        <li><a href="#">RELATOS</a></li>
-        <li><a href="#">SERVIÇOS</a></li>
-        <li><a href="#">SOBRE MIM</a></li>
+        <li><a href="#Inicio">INÍCIO</a></li>
+        <li><a href="#Relatos">RELATOS</a></li>
+        <li><a href="#Serviços">SERVIÇOS</a></li>
+        <li><a href="#Sobre_Min">SOBRE MIM</a></li>
       </ul>
     </nav>
-    <header>
+    <header id="Inicio">
       <div class="perfil">
        <h1>Rosa Nobrega <br>-Psicologa-</h1>
        <p>Bem-vindo (a) ao meu espaço de apoio
@@ -25,11 +25,11 @@
         para o bem-estar mental começa com
         um simples clique</p>
         <br>
-        <button class="bot-header">AGENDE SUA CONSULTA</button>
+        <button class="bot-header" onclick="IrProZap()">AGENDE SUA CONSULTA</button>
      </div>
      <img src="./IMG/Rosa.png" alt="">
     </header>
-    <main>
+    <main id = "Serviços">
       <h1>SERVIÇOS</h1>
       <div class="Carrosel"> 
       <div class="box01">
@@ -53,7 +53,7 @@
         <button>Saber Mais</button>
       </div>
     </main>
-    <section class="relatos-section">
+    <section class="relatos-section" id="Relatos">
       <h1>RELATOS</h1>
       <div class="relatos-grid">
         <article class="relato-card">
@@ -62,7 +62,6 @@
             <figcaption>
               <h2>Superando a ansiedade</h2>
               <p class="trecho">Senti que estava preso(a) a pensamentos que não me deixavam... </p>
-              <button class="btn-ler" data-relato="1" aria-haspopup="dialog">Ler mais</button>
             </figcaption>
           </figure>
         </article>
@@ -73,7 +72,6 @@
             <figcaption>
               <h2>Encontrando motivação</h2>
               <p class="trecho">Com o acompanhamento, consegui retomar pequenas atitudes do dia a dia...</p>
-              <button class="btn-ler" data-relato="2" aria-haspopup="dialog">Ler mais</button>
             </figcaption>
           </figure>
         </article>
@@ -84,7 +82,6 @@
             <figcaption>
               <h2>Melhorando relacionamentos</h2>
               <p class="trecho">Aprendi a colocar limites e a me comunicar com mais clareza...</p>
-              <button class="btn-ler" data-relato="3" aria-haspopup="dialog">Ler mais</button>
             </figcaption>
           </figure>
         </article>
@@ -95,7 +92,6 @@
             <figcaption>
               <h2>Reconstruindo a autoestima</h2>
               <p class="trecho">Passei a reconhecer minhas conquistas e aceitar minhas falhas...</p>
-              <button class="btn-ler" data-relato="4" aria-haspopup="dialog">Ler mais</button>
             </figcaption>
           </figure>
         </article>
@@ -106,7 +102,6 @@
             <figcaption>
               <h2>Processando o luto</h2>
               <p class="trecho">O processo foi diferente do que eu esperava, mas encontrei acolhimento...</p>
-              <button class="btn-ler" data-relato="5" aria-haspopup="dialog">Ler mais</button>
             </figcaption>
           </figure>
         </article>
@@ -120,7 +115,7 @@
         </div>
       </dialog>
     </section>
-    <section class="Sobre_Min">
+    <section class="Sobre_Min" id="Sobre_Min">
       <h1>SOBRE MIN</h1>
    <article class="Parte1">
    <img src="./IMG/FotoSobreMin01.png" alt="">
@@ -144,18 +139,30 @@ profundos.</p>
    </article>
     </section>
   <footer>
-    
-      <li class="">
-
-
-
-      </li>
-
-
-
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Rosa Nóbrega - Psicóloga</h3>
+        <p>Oferecendo apoio e transformação para o bem-estar mental.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Contato</h4>
+        <p>Email: contato@rosanobrega.com</p>
+        <p>Telefone: (71) 99999-9999</p>
+        <p>Salvador, Bahia</p>
+      </div>
+      <div class="footer-section">
+        <h4>Redes Sociais</h4>
+        <ul class="social-links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Rosa Nóbrega. Todos os direitos reservados.</p>
+    </div>
   </footer>
-
-
     <script src="app.js"></script>
 </body>
 </html>
