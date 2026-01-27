@@ -12,6 +12,11 @@ nav {
   padding: 20px;
 }
 
+nav img {
+  height: 60px;
+  width: auto;
+}
+
 ul {
   display: flex;
   list-style: none;
